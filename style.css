@@ -1,0 +1,85 @@
+	.screen { height:100%;  display:grid; place-items:center; }
+	.display-none { display: none !important; }
+	.bg-azul-principal { background-color:#023E73; }
+	p {font-size:24px;}
+	
+	* { padding:0; margin:0; }
+	html { font-family:'Times New Roman',Georgia; text-align:center; overflow-x:hidden; }
+	body { background-color:#F27D52; background: radial-gradient(circle, rgba(242,156,82,1) 0%, rgba(242,125,82,1) 100%); color:#F2DCC2; }
+	#tela-game { width:500px; height:750px; border:3px solid #2699A6; background-color: Black; }
+	h1 {font-size:48px; padding:16px; color:#133E22; cursor:default; }
+	main { display:grid; place-items:center; }
+	
+	/*Tela de Play*/
+	#screen-play{  background-color:#023E73; background: linear-gradient(172deg, rgba(2,62,115,1) 5%, rgba(9,9,121,1) 100%);}
+	#screen-play div { margin:16px; }
+	#screen-play button { border:none; background:transparent; cursor:pointer; }
+	#screen-play button:active { filter: contrast(80%); }
+	#screen-play p { font-size:32px; font-family: Verdana, sans-serif; cursor:default; }
+	
+	/*Tela de identificação*/
+	#div-organiza-welcome { display:flex; flex-direction:column; flex-wrap:nowrap; height:150px; justify-content:space-evenly; }
+	#div-organiza-welcome p {font-weight:bold;}
+	#input-nome-heroi-user {width:100%; font-size:18px; padding:4px 0; margin:16px 0 8px;}
+	#input-submit-nome-heroi-user {width:101%; margin-top:8px; border-color:#101086; background-color:#0b0b75; color:White; font-size:18px; font-weight:bold; cursor:pointer;}
+	#p-user-welcome-existent { word-break:break-word; }
+	#sub-identificacion { color:#27ff20; font-weight:bold; text-decoration:underline; cursor:pointer; }
+	#progress-bar-screen-user-welcome { height:8px; border-radius:30px;}
+	#progress-bar-screen-user-welcome::-webkit-progress-value {background-color: #e95420 !important; }
+	#progress-bar-screen-user-welcome::-moz-progress-bar {background-color: #e95420 !important;}
+	#progress-bar-screen-user-welcome {color: #e95420;}
+	
+	/*Tela de Escolhar de Herói*/
+	#screen-choose-hero { display:flex; flex-direction:column; flex-wrap:nowrap; justify-content:flex-end; }
+	#div-text-organiza-menu-choose p:nth-child(1) { color:#fb8f4f; font-weight:bold; word-break:break-all; cursor:default; }
+	#div-text-organiza-menu-choose p:nth-child(2) { color:#d1e6e3; font-size:17px; text-shadow: 1px 1px 5px #12054f; cursor:default; }
+	#button-start-game {width:100%; margin-top:12px; border-color:#101086; background-color:#0b0b75; color:White; font-size:20px; font-weight:bold; cursor:pointer; }
+	#button-hero-aleatory {width:100%; margin-top:12px; border-color:#FEE789; background-color:#FFCE4C; color:#080073; font-size:20px; font-weight:bold; cursor:pointer; }
+	#button-know-hero {width:50%; margin-top:12px; border-color:#0b0b75; background-color:White; color:#101086; font-size:18px; font-weight:bold; cursor:pointer; }
+	#button-know-hero:hover, #button-hero-aleatory:hover, #button-start-game:hover { filter: contrast(88%); }
+	#div-img-knight-gif {margin-top:25px;}
+	/*Tabela conhece heros*/
+	#div-table-hero { width:420px; height:90%; display:flex; flex-direction:column; flex-wrap:nowrap; justify-content:space-evenly; }
+	#card-hero-know { padding-bottom:6px; border:2px solid #f7dcbd; border-radius:10px; background-color:#0a5582; background: linear-gradient(45deg, #0f376ae0 0%, #0a5582 100%); box-shadow: -1px 0px 15px rgba(148, 146, 215, 0.32), 0px 0px 10px rgba(20, 19, 58, 0.32) inset;}
+	#card-hero-know p { text-shadow: -1px -1px 3px #181513; cursor:default; }
+	#card-hero-know p:nth-child(1) { color:#deb887; font-weight:bold; }
+	#div-table-heros-know button { width:130px; height:70px; margin: 0 0 7px 2px; border:2px groove #e86938; border-radius:3px; background-color:rgba(103, 12, 213,0.8); background: radial-gradient(circle, rgba(59,61,235,0.8) 5%, rgba(103,12,213,0.8) 50%); box-shadow: 0 0 7px #8187db inset, 0 0 3px #0b4171; transition: border 0.1s; cursor: help; }
+	#div-table-heros-know button:hover { border-width: 0px 0px 5px; }
+	#div-table-heros-know button:active { filter: brightness(75%) contrast(80%); border-width: 0.1px 0.1px 3px; border-style:inset; cursor:pointer; }
+	#div-table-heros-know figcaption { color:#74d90f; font-size:14px; font-weight:bold; }
+	#div-table-heros-know sub { cursor:default; }
+	#button-back-menu { width:280px; height:30px; border-radius: 10px 2px; border-color:#ce5418; background-color:#210179; color:#fff8f4; font-size:16px; font-weight:bold; cursor:pointer; }
+	
+	/*Tela Herói Aleatório*/
+	#div-text-screen-aleatory p { cursor:default; }
+	#div-img-screen-aleatory { padding:9px; border:6px ridge #aeb0b3; background:#5cadcdbf; }
+	#div-img-screen-aleatory img { width:128px; }
+	#div-buttons-screen-aleatory button { width:120px; height:25px; border-radius:4px; font-size:15px; font-weight:bold; cursor:pointer; }
+	#div-buttons-screen-aleatory button:nth-child(1) { border:2px solid #3fdf32; background-color:#100874; color:#3fdf32; }
+	#div-buttons-screen-aleatory button:nth-child(2) { border:2px solid #16056b; background-color:#fd650a; color:#22097c; }
+	#div-buttons-screen-aleatory button:hover { filter: contrast(85%); }
+	#div-buttons-screen-aleatory button:active { border-width:3px; border-style:groove; }
+	
+	/*Tela do Jogo*/
+	#organize-div-text-screen-game { cursor:default; }
+	#organize-div-text-screen-game progress { height:8px; border-radius:30px; border-color:#ca4100; accent-color: #e95420; }
+	#organize-div-text-screen-game progress::-webkit-progress-value {background-color: #e95420 !important; }
+	#organize-div-text-screen-game progress::-moz-progress-bar {background-color: #e95420 !important; }
+	#organize-div-text-screen-game progress { color: #e95420; }
+	#div-button-som { padding:7px 0; }
+	#button-som { width:177px; height:24px; cursor:pointer; }
+	#tela-projetion-directions { padding:10px; cursor:default; }
+	#tela-projetion-directions span { display:inline-block; width:40px; height:45px; padding:5px; font-size:40px; }
+	#div-mostrar-resposta { width:76px; height:19px; }
+	#div-power-up-down button { width:65px; height:40px; font-size:25px; cursor:pointer; }
+	#div-img-hero-screen-game img { width:96px; }
+	#div-buttons-directions button { font-size:35px; cursor:pointer; }
+	#div-button-sair-screen-game button { width:200px; height:35px; border-radius:2px 5px; border-color:#28a291; background:white; color:#28a291; font-size:23px; font-weight:bold; cursor:pointer; }
+	
+	/*Tela de Finalização*/
+	#organize-div-fim-aventura { width:95%; padding:10px 0; margin:12px; border:2px solid #f08341; border-radius:15px; background-color: #3d0491; color: #14d90d; box-shadow:0px 1px 5px #eafafa85; }
+	#organize-div-fim-aventura img { width:80px; }
+	#organize-div-fim-aventura p:nth-child(2) { word-break:break-all; }
+	#organize-div-fim-aventura p:nth-child(3) { word-break:break-word; }
+	#button-menu-inicial-end-game { width:250px; height:28px; border-radius:50px; background-color:#6cf0f0; color:#301e19e8; font-size:16px; font-weight:bold; text-shadow:0 0 3px #4e6ca4; border-color:#ec9e39; cursor:pointer; }
+	#button-menu-inicial-end-game:hover { background-color:#3ad4b7; color:#331798fa; }

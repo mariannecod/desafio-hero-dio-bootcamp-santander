@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Projeto do BootCamp Santander da DIO">
+		<title> Hero Desafio </title>
+		
+		
+		<link rel="icon" type="image/png" sizes="16x16" href="src/public/favicon/16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="src/public/favicon/32x32.png">
+		<link rel="icon" type="image/ico" sizes="48x48" href="src/public/favicon/48x48.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="src/public/favicon/180x180.png">
+		<link rel="manifest" href="src/public/favicon/site.webmanifest">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+
+	<body>
+		
+		<head>
+		
+			<h1>Desafio Hero</h1>
+		
+		</head>
+		
+		<main>
+		
+			<div name="tela" id="tela-game">
+				
+				<!-- Tela de Play -->
+				
+				<div name="tela-play" id="screen-play" class="screen">
+				
+					<div>
+						
+						<button id="button-play">
+							<img src="src/screen-play/img/play.png" alt="▶️" />
+						</button>
+						
+						<p>PLAY</p>
+						
+					</div>
+					
+				</div>
+				
+				<!-- Tela de Boas-Vindas -->
+				
+				<div name="tela-apresetação" id="screen-welcome" class="screen bg-azul-principal display-none">
+				
+					<div id="div-organiza-welcome" class="">
+						
+						<div id="div-form-welcome">
+							
+							<p>Olá, seja bem-vindo, Herói.</p>
+							<p>Qual é o seu nome?</p>
+							
+							<form name="form-nomeclatura-personagem" method="post" id="form-nome-heroi">
+								
+								<div>
+									<input type="text" name="nome-heroi" id="input-nome-heroi-user" placeholder="Ex: Cavalareiro Andante, Super Agitação, Prince" aria-label ="Apelido no Jogo" minlength="3" maxlength="100" required="required" autofocus="true"/>
+								</div>
+								<div>
+									<input type="submit" id="input-submit-nome-heroi-user" title="Confirmar nome" value="OK" />
+								</div>
+								
+							</form>
+							
+						</div>
+						
+						<div id="div-user-welcome" class="display-none">
+						
+							<p id="p-user-welcome-existent">Olá, seja bem-vindo</p>
+							<sub id="sub-identificacion" role="button" tabindex="0">Não é você?</sub>
+							
+							<div>
+								<progress id="progress-bar-screen-user-welcome" value="0" max="100" ></progress>
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				
+				<!-- Tela de Menu Escolher Herói -->
+				
+				<div name="tela-escolher-heroi" id="screen-choose-hero" class="screen bg-azul-principal display-none">
+				
+					<div id="div-organiza-menu-choose-hero" >
+						
+						<div id="div-text-organiza-menu-choose">
+							
+							<p>Olá, Emy</p>
+							<p>Escolha entre um herói iniciante ou herói aleatório para começar, ou clique em conheça os heróis para obter mais informações sobre eles.</p>
+							
+						</div>
+						
+						<div>
+							
+							<button id="button-start-game">
+								Herói Iniciante
+							</button>
+							
+							<button id="button-hero-aleatory">
+								Herói Aleatório 
+							</button>
+							
+							<button id="button-know-hero">
+								Conheça os Heróis
+							</button>
+							
+							
+						</div>
+						
+						<div id="div-img-knight-gif">
+							
+							<img src="src/screen-choose-hero/img/cavaleiro-dourado.gif" title="Golden Knight: Character Sprite de Flixberry Entertainment do opengameart.org" alt="GIF de um cavaleiro com armadura cor de ouro, que empunha uma espada e guarda"/>
+							<div><sub>imagem de Flixberry Entertainment do opengameart.org </sub></div>
+						</div>
+						
+					</div>
+					
+					
+					<div id="div-table-hero" class="display-none">
+						
+						<div>
+							
+							<p>Heróis</p>
+							<sub>click em cada herói para saber mais</sub>
+							
+						</div>
+						
+						<div name="card-heroi" id="card-hero-know" class="display-none">
+							
+							<p>nome</p>
+							<p>level</p>
+							<p>nivel</p>
+							<p>Caracteristicas</p>
+							<p>xp</p>
+							
+						</div>
+						
+						<div id="div-table-heros-know">
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<button>
+								
+								<figure>
+									
+									<img />
+									<figcaption></figcaption>
+									
+								</figure>
+								
+							</button>
+							
+							<div><sub>imagens de Eldiran do opengameart.org (32x32 RPG Character Sprites)</sub></div>
+							
+						</div>
+						
+						<div>
+						
+							<button id="button-back-menu">
+								Voltar
+							</button>
+						
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<!-- Tela Heroi Aleatório -->
+				
+				<div name="tela-heroi-aleatorio" id="screen-hero-aleatory" class="screen bg-azul-principal display-none">
+					
+					<div id="div-text-screen-aleatory">
+						
+						<p>Parabens</p>
+						<p>Você Ganhou</p>
+						<p>Level</p>
+						<p>Você tem de XP</p>
+						<p>Falta XP para o próximo nivel</p>
+						
+					</div>
+					
+					<div id="div-img-screen-aleatory">
+						
+						<img />
+						
+					</div>
+					
+					<div id="div-buttons-screen-aleatory">
+						
+						<button>
+							Evoluir Herói
+						</button>
+						
+						<button>
+							Pega Herói
+						</button>
+						
+					</div>
+					
+				</div>
+				
+				<!-- Tela GAME -->
+				
+				<div name="tela-game" id="screen-game" class="screen bg-azul-principal display-none">
+				
+					<div id="organize-div-text-screen-game">
+						
+						<p>❤️❤️❤️</p>
+						
+						<p>Nível 01</p>
+						
+						<div>
+							<progress value="0" ></progress>
+							<sub>🏆</sub>
+						</div>
+							
+						<div>
+							<sub>0 xp</sub>
+						</div>
+						
+						<div id="div-button-som">
+							<button id="button-som" title="Som Ligado">🔊</button>
+							<div><sub>aperte a tecla m ou clique no botão acima </sub></div>
+						</div>
+						
+						
+					</div>
+					
+					
+					<div id="div-observar-e-repete">  </div>
+					
+					<div name="tela-de-direções-que-o-hero-tem-que-ir" id="tela-projetion-directions">
+						
+						
+						<span>‎ </span>
+						<span>‎ </span>
+						<span>‎ </span>
+						<span>‎ </span>
+						
+					</div>
+					
+					<div id="div-mostrar-resposta"></div>
+					
+					<div name="power-up-down" id="div-power-up-down">
+						
+						<button title="prenda ou mico?">▶️</button>
+						
+						<div>
+							<sub>Dê o play, ou aperte a tecla de espaço</sub>
+						</div>
+						
+					</div>
+					
+					<div id="div-img-hero-screen-game">
+						
+						<img />
+						
+					</div>
+					
+					<div name="buttons-usuario-clicar" id="div-buttons-directions">
+						
+						<button title="esquerda" value="⬅️">⬅️</button>
+						<button title="cima" value="⬆️">⬆️</button>
+						<button title="direita" value="➡️">➡️</button>
+						<button title="baixo" value="⬇️">⬇️</button>
+						
+						<div><sub>use as setas do teclado ou clique no botões acima</sub></div>
+						
+					</div>
+					
+					<div name="button-sair-tela-final" id="div-button-sair-screen-game" >
+						
+						<button>Sair</button>
+						
+					</div>
+					
+				</div>
+				
+				<!-- Tela de Finalização -->
+				<div name="tela-final" id="screen-end-game" class="screen  bg-azul-principal display-none">
+				
+					<div>
+						
+						<p>FIM da Aventura</p>
+						
+						<div id="organize-div-fim-aventura">
+							
+							<div>
+								
+								<img />
+								
+							</div>
+							
+							<p>Sua Pontuação: 10.000 XP</p>
+							<p>O Herói de nome Dick está no nível de Ferro</p>
+							<p>Level 5</p>
+							
+							
+						</div>
+						
+						<button id="button-menu-inicial-end-game">
+							MENU
+						</button>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</main>
+		
+		<script type="text/javascript" src="script.js"></script>
+		<noscript>Seu navegador não suporta javascript!</noscript>
+	</body>
+</html>
