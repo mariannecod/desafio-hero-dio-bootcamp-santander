@@ -1,7 +1,7 @@
-# Desafio Hero Santander 
+# Desafio Hero Santander 🦸🔥
 Projeto do Bootcamp Godot Santander
 
-## DESAFIO DIO - Classificador de Nível de Herói
+## DESAFIO DIO - Classificador de Nível de Herói 📜
 
 
 ```
@@ -42,22 +42,25 @@ Ao final deve se exibir uma mensagem:
 
 
 
-## Demonstração
+## Demonstração 🎮
 
 [Acesse e conheça](https://1001utilidades.online/bootcampgodotsantander/desafiohero "Insira um gif ou um link de alguma demonstração")
 
 
-## Screenshots
+## Screenshots 📸
 
 ![Menu](src/public/screenshots/menu.gif)
 ![List Hero](src/public/screenshots/lista-herois.png)
 
 
-## Tecnologias utilizadas
+## Tecnologias utilizadas 🪄
 
 1.  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-2.  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+3.  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-3. ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+4. ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+## Exemplo de Código 📄
+[Esse simples código](src/public/codigo-simples.txt) já completaria o desafio, mas é meio sem graça. Quis colocar um pouco de pimenta 🌶️, afinal o curso é sobre jogos.
 
